@@ -50,10 +50,63 @@ public abstract class Critter {
 	private int y_coord;
 	
 	protected final void walk(int direction) {
+		//subtract walk energy
+		energy -= Params.walk_energy_cost; 
+		//find new position
+		if(direction == 0) {
+			//x+1
+		}
+		if(direction == 1) {
+			//x+1, y-1
+		}
+		if(direction == 2) {
+			//y-1
+		}
+		if(direction == 3) {
+			//x-1, y-1
+		}
+		if(direction == 4) {
+			//x-1
+		}
+		if(direction == 5) {
+			//x-1, y+1
+		}
+		if(direction == 6) {
+			//y+1
+		}
+		if(direction == 7) {
+			//x+1, y+1
+		}
 	}
 	
 	protected final void run(int direction) {
-		
+		//subtract run energy
+		energy -= Params.run_energy_cost; 
+		//find new position
+		if(direction == 0) {
+			//x+2
+		}
+		if(direction == 1) {
+			//x+2, y-2
+		}
+		if(direction == 2) {
+			//y-2
+		}
+		if(direction == 3) {
+			//x-2, y-2
+		}
+		if(direction == 4) {
+			//x-2
+		}
+		if(direction == 5) {
+			//x-2, y+2
+		}
+		if(direction == 6) {
+			//y+2
+		}
+		if(direction == 7) {
+			//x+2, y+2
+		}
 	}
 	
 	protected final void reproduce(Critter offspring, int direction) {
